@@ -17,6 +17,8 @@ import Navigation from "./components/Navigation/container";
 import AddScheduleDialog from "./components/AddScheduleDialog/container";
 
 import CurrentScheduleDialog from "./components/CurrentScheduleDialog/container";
+import ErrorSnackbar from "./components/ErrorSnackbar/container";
+
 
 // applyMiddlewareを追加する
 import { createStore, applyMiddleware } from "redux";
@@ -32,6 +34,7 @@ const App = () => (
       <CalendarBoard />
       <AddScheduleDialog />
       <CurrentScheduleDialog />
+      <ErrorSnackbar />
     </MuiPickersUtilsProvider>
   </Provider>
 );
